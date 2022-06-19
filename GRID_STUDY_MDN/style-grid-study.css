@@ -1,0 +1,50 @@
+.main_Div {
+    display: grid;
+    grid: repeat(2, 60px) / auto-flow 80px;
+    border: 1px dashed red;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  .main_Div > div {
+    background-color: magenta;
+    border: 1px dashed black;
+
+    width: 75px;
+    height: 55px;
+  }
+
+  .second_Div {
+    display: grid;
+    grid-auto-flow: row dense;
+    gap: 5px;
+    border: 1px dashed red;
+    height: 250px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .second_Div> div {
+    background-color: turquoise;
+    border: 1px dashed black;
+    /* width: 100px; */
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .b01, .b02 {
+    width: 250px;
+  }
+
+  .b03, .b04 {
+    width: 120px;
+  }
+
+  .b05, .b06 {
+    width: 100px;
+  }
+
+
+  
