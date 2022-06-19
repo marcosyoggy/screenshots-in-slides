@@ -1,0 +1,34 @@
+html {
+    background-color: lightgray;
+}
+
+body {
+    border: 2px solid red;
+    max-width: 90vw;
+    height: 550px;
+    background-color: lime;
+}
+
+.main_Div {
+    background-color: lightblue;
+    border: 1px dotted black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.div_Flex {
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.div_Block {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    justify-content: space-around;
+    height: 200px;
+}   
