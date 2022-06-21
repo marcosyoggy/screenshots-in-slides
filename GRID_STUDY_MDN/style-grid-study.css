@@ -14,7 +14,7 @@
     height: 55px;
   } */
 
-  /* .second_Div {
+/* .second_Div {
     display: grid;
     grid-auto-flow: row dense;
     gap: 5px;
@@ -24,10 +24,10 @@
     padding: 5px;
   } */
 
-  /* grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+/* grid-template: repeat(4, 1fr) / repeat(2, 1fr);
   grid-auto-flow: column;  or 'row', 'row dense', 'column dense' */
 
-  /* .second_Div> div {
+/* .second_Div> div {
     background-color: turquoise;
     border: 1px dashed black;
     width: 100px;
@@ -37,7 +37,7 @@
     margin-bottom: 5px;
   } */
 
-  /* .b01, .b02 {
+/* .b01, .b02 {
     width: 250px;
   }
 
@@ -50,9 +50,9 @@
   }  */
 
 
-  /* XXXXXXXXXXXXXXXXXXXXXXXXXXX exemlo mdn - grid areas XXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXX exemlo mdn - grid areas XXXXXXXXXXXXXXXXXXXX */
 
-  /* .wrapper {
+/* .wrapper {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 100px 100px;
@@ -71,9 +71,9 @@
     margin: 2px;
   } */
 
-  /* XXXXXXXXXXXXXXXXXXXXXXXXXXX exemlo mdn - grid cells XXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXX exemlo mdn - grid cells XXXXXXXXXXXXXXXXXXXX */
 
-  /* .wrapper {
+/* .wrapper {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 100px;
@@ -82,8 +82,8 @@
   }
    */
 
-   /* XXXXXXXXXXXXXXXXXXXXX GRID_TEMPLATE  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-   /* .blk-0X
+/* XXXXXXXXXXXXXXXXXXXXX GRID_TEMPLATE  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* .blk-0X
    .g-template */
 /* .g-template {
   display: grid;
@@ -156,9 +156,9 @@
 
 */
 
-   /* XXXXXXXXXXXXXXXXXXXXX GRID_SLIDES  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXX GRID_SLIDES  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
-   .g-slides {
+/* .g-slides {
     display: grid;
   
     border: 2px solid red;
@@ -171,11 +171,11 @@
                          'b2 b1 b1 b1 b3' 
                          '. b1 b1 b1 .' 
                          '. b4 b5 b6 .';
-    grid-template-rows: 160px 60px 60px;                        
-    grid-template-columns: 1fr 1fr;
-  }
+    grid-template-rows: 140px 60px 60px;                        
+    grid-template-columns: 0fr 1fr;
+  } */
 
-  .b-01 {
+/* .b-01 {
     grid-area: b1;
     background-color: #8ca0ff;
     margin: 5px;
@@ -184,23 +184,34 @@
   }
   .b-02 {
     grid-area: b2;
+    display: flex;
     background-color: #8ca0ff;
-    text-align: center;
+    align-items:center;
+    justify-content: center;
+    width: 60px;
   }
   .b-03 {
     grid-area: b3;
+    display: flex;
     background-color: #8ca0ff;
-    text-align: center;
-  }
-  .b-04 {
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+  } */
+
+/* b-slide" */
+/* b-0.5seg */
+/* b-1.0seg */
+
+/* .b-slide {
     grid-area: b4;
     background-color: #8ca0ff;
   }
-  .b-05 {
+  .b-05seg {
     grid-area: b5;
     background-color: #8ca0ff;
   }
-  .b-06 {
+  .b-1seg {
     grid-area: b6;
     background-color: #8ca0ff;
   }
@@ -211,13 +222,199 @@
     background-color: lime;;
   }
 
-  .b-04, .b-05, .b-06 {
+  .b-slide, .b-05seg, .b-1seg {
     border: 1px solid black;
     border-radius: 3px;
     background-color: lightgreen;
+  } */
+
+
+/* XXXXXXXXXXXXXXXXX  BAESLINE_PLACEMENT  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* .bl-place {
+    display: grid;
+    border: 1px solid green;
+    background-color: magenta;
+    margin: 5px;
+    padding: 5px;
+
+    grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 100px);
+
+   gap: 1px 8px;
+
+
+  } */
+
+/* .bl-place> div {
+    display: flex;
+    border: 1px dashed black;
+    align-items: center;
+    justify-content: center;
+
+  } */
+
+/* .el-03 {
+    grid-column: 3;
+    grid-row: 1/4; */
+
+/* grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4; */
+/* } */
+
+/* .el-01 {
+    grid-column: 1;
+    grid-row: 1/3; */
+
+/* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+/* } */
+
+/* .el-04 {
+    grid-column: 1/3;
+    grid-row: 3; */
+
+/* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4; */
+/* } */
+
+/* .el-02 {
+    grid-column: 2;
+    grid-row: 1/3; */
+
+/* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+/* }  */
+
+
+/* XXXXXXXXXXXXXXXXX  GRID_AREAS  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+/* .grid-areas {
+  display: grid;
+  border: 1px solid green;
+  background-color: magenta;
+  max-width: 90vw;
+  margin: auto;
+  height: auto;
+  padding: 5px;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 8px 8px;
+
+  grid-template-areas: 'hd hd hd'
+                       'sd main main'  
+                       'sd main main'  
+                       'ft ft ft';   */
+  /* grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hd hd"
+    "sd main"
+    "sd main"
+    "ft ft"; */
+
+/* } */
+
+/* .grid-areas>* {
+  display: flex;
+  border: 1px dashed black;
+  align-items: center;
+  justify-content: center;
+} */
+
+/*el_header
+el_sidebar
+el_main
+el_footer*/
+
+/* .el_header {
+  grid-area: hd;
+}
+
+.el_sidebar {
+  grid-area: sd;
+}
+
+.el_main {
+  grid-area: main;
+}
+
+.el_footer {
+  grid-area: ft;
+} */
+
+/* @media (min-width: 700px) {
+  .grid-areas {
+      grid-template-columns: repeat(9, 1fr);
+      grid-template-areas:
+        "sd sd hd hd   hd   hd   hd   hd   hd"
+        "sd sd sd main main main main main main"
+        "sd sd ft  ft  ft   ft   ft   ft   ft";
   }
+}
+@media (min-width: 1000px) {
+  .grid-areas {
+      grid-template-areas:
+        "hd hd hd   hd   hd   hd   hd   hd hd"
+        "sd sd main main main main main sd sd"
+        "sd sd ft ft ft ft ft sd sd";
+  }
+}
 
-  
+@media (min-width: 1300px) {
+  .grid-areas {
+      grid-template-areas:
+        "hd hd hd   hd   hd   hd   hd   hd hd"
+        "sd sd main main main main main main main"
+        "ft ft ft ft ft ft ft ft ft";
+  }
+} */
 
+/* XXXXXXXXXXXXXXXXX  USER_INTERFACE  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* .user-interface {
+  display: grid;
+  border: 1px solid green;
+  background-color: magenta;
+  max-width: 90vw;
+  margin: auto;
+  height: auto;
+  padding: 5px;
 
-  
+  grid-template-columns: 1fr 150px;
+  grid-template-rows: 150px;
+  gap: 8px 8px;
+
+  grid-template-areas: 'txt img';
+
+}
+
+.txt {
+  grid-area: txt;
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.img {
+  grid-area: img;
+  border: 1px solid black;
+  padding: 5px;
+  background-image: url("./image/Avatar.ECE.2009.720p.BrRip.x264.bitloks.YIFY.mp4_snapshot_00.07.01.401.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+p {
+  margin: 1px;
+} */
+
+/* XXXXXXXXXXXXXXXXX  CSS_GRID_LAYOUT  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
